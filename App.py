@@ -1,9 +1,6 @@
-import daemon
-import os
+from app.main import main_context
 
 if __name__ == '__main__':
     print('program start')
-    with daemon.DaemonContext():
-        print(123)
-
-    print('end')
+    while True:
+        main_context()
