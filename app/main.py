@@ -19,5 +19,5 @@ def main_context():
                           routing_key=settings.QUEUE,
                           body=str(ticker),
                           properties=pika.BasicProperties(
-                              delivery_mode=2,  # make message persistent
+                          delivery_mode=2,  # make message persistent
                           ))
